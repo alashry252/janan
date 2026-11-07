@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج | جنان لوكشري</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="details.css"> 
+</head>
+<body class="product-details-page">
+
+    <nav class="navbar">
+        <div class="nav-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    
+        <div class="nav-actions">
+            <a href="#" class="nav-icon"><i class="fa-regular fa-user"></i></a>
+            <div class="cart-trigger" id="cartBtn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+    
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="#products">المجموعات</a></li>
+            <li><a href="#about">قصتنا</a></li>
+        </ul>
+    
+        <div class="logo">
+            <img src="image/logo.png" alt="Jenan">
+        </div>
+    </nav>
+
+    <main class="product-wrapper">
+        <div class="product-grid">
+            <section class="gallery-container">
+                <div class="main-stage-wrapper">
+                    <img id="main-display-img" src="" alt="Product Main Image">
+                    <div class="zoom-indicator"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="thumbnails-slider" id="thumb-list">
+                    </div>
+            </section>
+
+            <section class="details-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">الرئيسية</a> <span>/</span> <span id="current-crumb">...</span>
+                </nav>
+
+                <h1 id="p-title" class="p-name">جاري التحميل...</h1>
+                
+                <div class="p-meta">
+                    <div class="p-price-tag">
+                        <span id="p-price" class="amount">0</span>
+                        <span class="currency">ج.م</span>
+                    </div>
+                    <div class="p-status">متوفر في المخزن</div>
+                </div>
+
+                <div class="p-description">
+                    <h3>وصف القطعة</h3>
+                    <p id="p-desc">تحميل التفاصيل الفنية...</p>
+                </div>
+
+                <div class="p-features" id="p-specs">
+                    </div>
+
+                <div class="p-actions">
+                    <button class="add-to-cart-btn" onclick="addToCartDetailed()">
+                        <span>إضافة للحقيبة</span>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                    <button class="fav-btn" onclick="toggleHeart(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="guarantee-box">
+                    <div class="g-item"><i class="fa-solid fa-truck-fast"></i><span>توصيل سريع</span></div>
+                    <div class="g-item"><i class="fa-solid fa-shield-heart"></i><span>خامات ملكية</span></div>
+                    <div class="g-item"><i class="fa-solid fa-rotate-left"></i><span>استبدال مرن</span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="related-section">
+        <div class="section-container">
+            <div class="section-head">
+                <h2>قطع قد تعجبكِ</h2>
+                <p>تشكيلة مختارة تليق بذوقك الرفيع</p>
+            </div>
+            <div class="cards-grid" id="suggestions-list">
+                </div>
+        </div>
+    </section>
+<!-- start footer -->
+<footer class="main-footer reveal">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="image/logo.png"  class="footer-logo" alt="">
+            <!-- <h2 class="footer-logo">جنان</h2> -->
+            <p>نصنع الفخامة لتليق بكِ. عبايات مصممة يدوياً بأجود الخامات العالمية لتمنحكِ إطلالة ملكية لا تُنسى.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_jenan_brand_1?igsh=bWFveWF0OXF4Z2Vj"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>روابط تهمك</h3>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">أحدث التشكيلات</a></li>
+                <li><a href="#">سياسة الاستبدال</a></li>
+                <li><a href="#">الأسئلة الشائعة</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>تواصلوا معنا</h3>
+            <p><i class="fa-solid fa-location-dot"></i> كفر الدوار -   مصر</p>
+            <p><i class="fa-solid fa-phone"></i> +20 12 11819366</p>
+            <p><i class="fa-solid fa-envelope"></i> contact@jenan-luxury.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="gold-divider"></div>
+        <p>&copy; 2026 متجر جنان لوكشري. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+<!-- end  footer -->
+
+<div class="cart-popdown" id="cartPopdown">
+    <div class="cart-items-container" id="cartItemsContainer">
+        </div>
+    <div class="cart-total-mini" style="display: flex; justify-content: space-between; padding: 10px 0; border-top: 1px solid #eee; color: #05241d;">
+        <span>الإجمالي:</span>
+        <span id="cartTotal">٠ ج.م</span>
+    </div>
+    <button class="whatsapp-send-btn" onclick="sendToWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> إتمام الطلب عبر واتساب
+    </button>
+</div>
+
+<div id="notification-container"></div>
+    <script src="details.js"></script>
+</body>
+</html>
